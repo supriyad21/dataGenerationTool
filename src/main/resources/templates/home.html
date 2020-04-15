@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>SpringBoot Excel</title>
+  </head>
+  <body>
+    <h3>Download Excel Customers File</h3>
+    <div>
+      <a href="http://localhost:9094/api/mydata/customers.xlsx">Customers .XLSX</a>
+      
+       
+  <br>
+    
+    </div>
+    <div><a href="http://localhost:9094/generator/excel/dataGeneration.xlsx">dataGeneration .XLSX</a></div>
+    <br>
+   
+    <form name="submitForm" method="post" id="requestHelper" action="/generator/excel/dataGeneration.xlsx">
+   
+   <div> Generate  <input type="number" id="numRows" name="numRows" width="50"/> :Rows
+   
+  </div>
+  <br>
+ <div >
+Type:
+<select id="column" name="column[0].type">
+  <option value="City">City</option>
+  <option value="Names">Names</option>
+   <option value="Country">Country</option>
+</select>
+
+Title : <input type="text" id="column[0].title" name="column[0].title" />
+Option : <input type="text" id="column[0].option" name="column[0].option" />
+
+</div>
+<br>
+ <br>
+ <div >
+Type:
+<select id="column" name="column[1].type">
+  <option value="City">City</option>
+  <option value="Names">Names</option>
+   <option value="Country">Country</option>
+</select>
+
+Title : <input type="text" id="column[1].title" name="column[1].title" />
+
+
+</div>
+<br>
+ <br>
+ <div >
+Type:
+<select id="column" name="column[2].type">
+  <option value="City">City</option>
+  <option value="Names">Names</option>
+   <option value="Country">Country</option>
+</select>
+
+Title : <input type="text" id="column[2].title" name="column[2].title" />
+
+
+</div>
+<br>
+
+
+
+
+ <div> 
+ 
+ <button onclick="submit">generate Excel</button>
+    </div>
+    </form>
+    <div></div>
+  </body>
+  
+ 
+</html>
